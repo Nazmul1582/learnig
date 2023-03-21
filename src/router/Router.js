@@ -19,7 +19,7 @@ const Router = () => {
         <Route path="about" element={<About />} />
         <Route path="posts" element={<Posts />} />
         <Route path="posts/:id" element={<SinglePost />} />
-        <Route path="services/*" element={<Services />}>
+        <Route path="services" element={<Services />}>
           <Route path="web-dev" element={<WebDevelopment />} />
           <Route path="app-dev" element={<AppDevelopment />} />
         </Route>
