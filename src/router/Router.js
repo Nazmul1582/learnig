@@ -3,12 +3,10 @@ import About from "../pages/About";
 import Home from "../pages/Home";
 import Services from "../pages/Services";
 import Portfolio from "../pages/Portfolio";
-import Header from "../components/Header";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
