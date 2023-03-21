@@ -73,6 +73,7 @@ ul.list li {
   border: 1px solid #ddd;
   margin: 20px 0;
 }
+
 ul.list p {
   margin-bottom: 20px;
 }
@@ -88,13 +89,36 @@ ul.list p {
 /*  header  */
 .header nav {
   background-color: rgb(43, 137, 226);
-  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+}
+.header nav li {
+  padding: 20px;
 }
 .header nav a {
   color: #fff;
   font-weight: 600;
+}
+.servicesMenu {
+  position: relative;
+}
+.servicesMenu:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  width: 155px;
+  background-color: #03a9f4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  display: none;
+}
+.dropdown li {
+  padding: 0 !important;
+}
+.nested {
+  font-size: 13px;
 }

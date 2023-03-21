@@ -1,16 +1,16 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-// import { Route, Routes } from "react-router-dom";
-// import WebDesign from "../components/WebDesign";
+import { Route, Routes } from "react-router-dom";
+import AppDevelopment from "../components/AppDevelopment";
+import WebDevelopment from "../components/WebDevelopment";
 
 const Services = () => {
   return (
     <div>
       <h1>Services Page</h1>
-      {/* <Routes>
-        <Route path="web-design" element={<WebDesign />} />
-      </Routes> */}
-      <Outlet />
+      <Routes>
+        <Route path="web-dev" element={<WebDevelopment />} />
+        <Route path="app-dev" element={<AppDevelopment />} />
+      </Routes>
     </div>
   );
 };

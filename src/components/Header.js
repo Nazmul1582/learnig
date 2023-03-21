@@ -13,8 +13,20 @@ const Header = () => {
           {/* to="/about"   to="about" are same
           <Link to="about">About</Link>  */}
         </li>
-        <li>
+        <li className="servicesMenu">
           <Link to="/services">Services</Link>
+          <ul className="dropdown">
+            <li>
+              <Link className="nested" to="/services/web-dev">
+                Web Development
+              </Link>
+            </li>
+            <li>
+              <Link className="nested" to="/services/app-dev">
+                App Development
+              </Link>
+            </li>
+          </ul>
         </li>
         <li>
           <Link to="/portfolio">Portfolio</Link>
