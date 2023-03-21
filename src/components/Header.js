@@ -13,6 +13,9 @@ const Header = () => {
           {/* to="/about"   to="about" are same
           <Link to="about">About</Link>  */}
         </li>
+        <li>
+          <Link to="/posts">Posts</Link>
+        </li>
         <li className="servicesMenu">
           <Link to="/services">Services</Link>
           <ul className="dropdown">
