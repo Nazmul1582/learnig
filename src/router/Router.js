@@ -7,6 +7,8 @@ import Header from "../components/Header";
 import NotFound from "../pages/NotFound";
 import WebDevelopment from "../components/WebDevelopment";
 import AppDevelopment from "../components/AppDevelopment";
+import Posts from "../pages/Posts";
+import SinglePost from "../pages/SinglePost";
 
 const Router = () => {
   return (
@@ -15,6 +17,8 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="posts" element={<Posts />} />
+        <Route path="posts/:id" element={<SinglePost />} />
         <Route path="services/*" element={<Services />}>
           <Route path="web-dev" element={<WebDevelopment />} />
           <Route path="app-dev" element={<AppDevelopment />} />
