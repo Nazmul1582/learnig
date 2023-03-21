@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Services from "../pages/Services";
 import Portfolio from "../pages/Portfolio";
 import Header from "../components/Header";
+import NotFound from "../pages/NotFound";
 
 const Router = () => {
   return (
@@ -13,6 +14,9 @@ const Router = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
+        <Route path="/*" element={<NotFound />} />
+        {/* or
+        <Route path="*" element={<NotFound />} /> */}
         <Route path="portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
