@@ -5,6 +5,8 @@ import Services from "../pages/Services";
 import Portfolio from "../pages/Portfolio";
 import Header from "../components/Header";
 import NotFound from "../pages/NotFound";
+import WebDevelopment from "../components/WebDevelopment";
+import AppDevelopment from "../components/AppDevelopment";
 
 const Router = () => {
   return (
@@ -13,7 +15,10 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="services/*" element={<Services />} />
+        <Route path="services/*" element={<Services />}>
+          <Route path="web-dev" element={<WebDevelopment />} />
+          <Route path="app-dev" element={<AppDevelopment />} />
+        </Route>
         <Route path="/*" element={<NotFound />} />
         {/* or
         <Route path="*" element={<NotFound />} /> */}
